@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="stylesheet" href="z3.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Red+Hat+Display&family=Ubuntu&display=swap" rel="stylesheet">
+
+<style>
+
+#section1 {
+  height: inherit;
+	}
+#section2{
+  display: none;
+  height: inherit;
+}
+#section3{
+  display: none;
+  height: inherit;
+}
+
+.wrapper{
+  width:auto;
+  height: 700px;
+  overflow: hidden;
+  position: relative;
+
+}
+.scrolling{
+  
+position: inherit;
+padding: 1em;
+overflow-y: scroll;
+width:520px;
+height: 700px;
+scroll-behavior: smooth;
+}
+
+
+  	
+</style>
+
+
+</head>
+
+<body >
+  <div class="nav" id="myTopnav">
+    <a id="home" class="btn btn-lg " href="https://viscommerce.com/" style="padding-top: 10px;">
+        <img src="VisCommerce_Company_Logo-red.webp"/> Home</a>
+     
+  <a class="btn btn-lg " href="#section1" onclick="sec1()" >Configuration</a>
+  
+  <a class="btn btn-lg" href="#section2" onclick="sec2()">Dimensions</a>
+  <a class="btn btn-lg" href="#section3" onclick="sec3()" >Environment</a> 
+  <a class="btn btn-lg" href="#" onclick="resetView()"> Reset View</a>
+  <a class="btn btn-lg" href="#" onclick="reload()"> Reload model</a>
+  <a class="btn btn-lg" href="#" onclick="InsceneLoad()">InScene View</a>
+   <!--<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+  </a>-->
+  
+  </div>
+
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "nav") {
+        x.className += " responsive";
+      } else {
+        x.className = "nav";
+      }
+    }
+
+function sec1(){
+  const sec1=document.getElementById("section1")
+      sec1.style.display="block";
+  const sec2=document.getElementById("section2")
+      sec2.style.display="none";
+      const sec3=document.getElementById("section3")
+      sec3.style.display="none";
+}
+
+    function sec2(){
+      const sec2=document.getElementById("section2")
+      sec2.style.display="block";
+      const sec1=document.getElementById("section1")
+      sec1.style.display="none";
+      const sec3=document.getElementById("section3")
+      sec3.style.display="none";
+
+
+    }
+
+    function sec3(){
+      const sec2=document.getElementById("section2")
+      sec2.style.display="none";
+      const sec1=document.getElementById("section1")
+      sec1.style.display="none";
+      const sec3=document.getElementById("section3")
+      sec3.style.display="block";
+
+
+    }
+    
+    </script>
+    
+
+
+
+  <div id="main" class="row gx-0">
+
+
+
+        <section class="model col-12 col-md-7 col-lg-8"  >
+                  <model-viewer
+                    id="model-viewer-id"
+                    src="Light_Brown_Cloth_Standalone_1K.glb"
+                    alt="Light Brown Cloth Sofa"
+                    interaction-prompt="auto"
+                    exposure="1"
+                    shadow-intensity="3"
+                    shadow-softness="0.1"
+                    camera-orbit="0 75deg 10m"
+                    max-camera-orbit="0 0 2.3m"
+                    interaction-prompt="none"
+                    camera-controls>
+                    
+                    
+                      <script src="dimensions_add.js" ></script>
+      
+                    <div class="poster" slot="poster" style="background-image: url('Standalone_Poster.jpg');"></div>
+
+                    <script src="js/progress_bar.js" ></script>
+                  </model-viewer>
+        
+          </section>
+        
+
+<section class="col-12 col-md-5 col-lg-4 px-4 px-lg-5"  >
+   
+  
+  <div class="wrapper" >
+    <div class="scrolling" >
+
+
+
+<section id="section1">   
+           
+
+
+                  <h2 ><b>Light Brown Cloth Sofa</b></h2>
+
+                  <br>
+                  <h3 ><b>Configuration</b></h3>
+             
+<br/>
+                  <div class="tabs">
+                          <div class="tab">
+                                              <input type="checkbox" id="chck1">
+                                              <label class="tab-label" for="chck1">Sofa Fabric<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                                <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                              </svg></label>
+                                          <div class="tab-content">
+                                            Customize your sofa fabric colour
+                                                    <div class="sofaColorControls " id="sofaColorControls" style="padding-left: 10px;">
+                                                        <button class="appearance-btn" style="background-color:rgb(221, 194, 154)" data-color="#ddc29a"></button>
+                                                        <button class="appearance-btn" style="background-color:#eddb17" data-color="#eddb17"></button>
+                                                        <button class="appearance-btn" style="background-color:#98b75e" data-color="#98b75e"></button>
+                                                        <button class="appearance-btn" style="background-color:#e07b2e" data-color="#e07b2e"></button>
+                                                        <button class="appearance-btn" style="background-color:#117774" data-color="#117774"></button>
+                                                        <button class="appearance-btn" style="background-color:#323232" data-color="#323232"></button>
+                                                    </div>
+                                          </div>
+                          </div>
+                    </div>
+
+<br/>
+
+
+                  <div class="tabs">
+                          <div class="tab">
+                                        <input type="checkbox" id="chck2">
+                                        <label class="tab-label" for="chck2">Pillow Fabric<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                        </svg></label>
+                                  <div class="tab-content">
+                                          Customize your pillow texture/fabric colour
+                                          <div id="mySidepanelPillow" class="sidepanel">
+                                    
+                                                    <div class="pillowColorControls " id="pillowColorControls" style="padding-left: 10px;">
+                                                            <button class="appearance-btn pillowColorControls" id="pillowColorControls" style="background-color:#d86316 " data-color="#d86316" data-name="Red"></button>
+                                                            <button class="appearance-btn pillowColorControls" id="pillowColorControls" style="background-color:#00ff00" data-color="#00ff00" data-name="Green"></button>
+                                                            <button class="appearance-btn pillowColorControls" id="pillowColorControls" style="background-color: #292929" data-color="#292929" data-name="Black"></button>
+
+                                                            <br>
+                                                            Customize your pillow texture/fabric colour
+                                                            <br>
+                                                            <button class="appearance-btn pillowTextureControls" id="pillowTextureControls" style="background-image: url('Checker.jpg') " value="Checker.jpg"
+                                                                                            data-name="CheckerPattern"></button>
+                                                                          <button class="appearance-btn pillowTextureControls" id="pillowColorControls" style="background-image: url('Diamond.jpg')" value="Diamond.jpg"
+                                                                                            data-name="DiamondPattern"></button>
+                                                                          <button class="appearance-btn pillowTextureControls" id="pillowColorControls" style="background-image: url('Leaf.jpg')" value="Leaf.jpg"
+                                                                                            data-name="LeafPattern"></button>
+                                                    </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+<br>
+
+
+
+
+    
+<!-- sec1-->
+</section> 
+   
+
+
+
+
+  <section id="section2">   
+           
+   
+    
+                      <h2 ><b>Light Brown Cloth Sofa</b></h2> 
+    
+                      <br> 
+                      <h3 ><b>Dimensions</b></h3>
+                   
+                      <div class="tabs" >
+                            <div class="tab">
+                                        <input type="checkbox" id="chck3">
+                                        <label class="tab-label" for="chck3">Dimensions<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                          <path d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z"/>
+                                        </svg></label>
+                                      <div class="tab-content">
+                                            Customize your Dimensions
+                                            <br>
+                                           
+                                              
+                                      </div>
+                            </div>
+                      </div>
+    
+    <br> <script src="dimensions_Change.js"></script>
+    <link rel="stylesheet" href="dimensions.css">
+
+      <!-- sec2-->
+  </section> 
+
+<section id="section3">
+
+<h2 ><b>Light Brown Cloth Sofa</b></h2> 
+    
+<br> 
+<h3 ><b>Environment</b></h3>
+<div id="hd" >
+      <button
+      id="imageSmall" type="button"
+      onmouseover="showImage1('imageSmall','reading_room_4k.jpg')"
+      onmouseout="hideImage1('imageSmall')"
+
+      value="reading_room_4k.hdr;reading_room_4k.jpg"> Reading Room</button>
+
+      <br>
+      <button
+      id="imageSmall" type="button"
+      onmouseover="showImage1('imageSmall','residential_garden_4k.jpg')"
+      onmouseout="hideImage1('imageSmall')"
+
+      value="residential_garden_4k.hdr;residential_garden_4k.jpg" >Residential garden</button>
+            
+      <br>
+      <button
+      id="imageSmall" type="button"
+      onmouseover="showImage1('imageSmall','kiara_interior_0.5k.jpg')"
+      onmouseout="hideImage1('imageSmall')"
+
+      value="kiara_interior_0.5k.hdr;kiara_interior_0.5k.jpg"> kiara_interior</button>
+      <br>
+      <button
+      id="imageSmall" type="button"
+      onmouseover="showImage1('imageSmall','Building.jpg')"
+      onmouseout="hideImage1('imageSmall')"
+
+      value="Building.hdr;Building.jpg"> Building</button>
+
+      <br>
+      <button
+      id="imageSmall" type="button"
+      onmouseover="showImage1('imageSmall','Indoor.jpg')"
+      onmouseout="hideImage1('imageSmall')"
+  
+      value="Indoor.hdr;Indoor.jpg">Indoor</button>
+
+      <br>
+
+      <button
+      id="imageSmall" type="button"
+      onmouseover="showImage1('imageSmall','Residential.jpg')"
+      onmouseout="hideImage1('imageSmall')"
+
+      value="Residential.hdr;Residential.jpg" >Residential</button>
+
+</div>
+ <!-- sec3--> 
+</section>
+
+<!--environment image buttons script-->
+<script>
+  var modelviewer10 = document.getElementById("model-viewer-id");
+
+  
+
+  document.querySelector("#hd").addEventListener("click", (event) => {
+      x = event.target.value;
+      temp = new Array();
+      temp = x.split(";");
+      y = temp[0];
+      z = temp[1];
+      modelviewer10.setAttribute("environment-image", y);
+      modelviewer10.setAttribute("skybox-image", z);
+  });
+
+
+
+</script>
+
+
+
+   
+       
+        
+  <script>function showImage1(elemId, imgSrc) {
+    console.log("Mouse is over text");
+    console.log("\tElemId:" + elemId + " Image Source:" + imgSrc);
+    const elem = document.getElementById("imageSmall");
+    const popImage = new Image();
+    popImage.src = imgSrc;
+    popImage.style.width="200px"; 
+    popImage.style.height="115px";
+    popImage.style.position = "absolute";
+popImage.style.top="80px";
+    popImage.style.transition="all 2s";
+    popImage.style.zIndex = "1";
+    elem.appendChild(popImage);
+  }
+  
+  function hideImage1(elemId) {
+  console.log("Mouse is off text");
+  console.log("\tElemId:" + elemId);
+  const elem = document.getElementById("imageSmall");
+  while (elem.childElementCount > 0) {
+    elem.removeChild(elem.lastChild);
+  }
+}
+  </script>
+
+
+
+
+
+
+
+
+ <!-- scrolling  nd wrapper-->
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+</section>
+ <!-- maindiv-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+  const modelviewer = document.getElementById("model-viewer-id");
+  
+document.querySelector('#sofaColorControls').addEventListener('click', (event) => {
+                        const colorString = event.target.dataset.color;
+                        const material1 = modelviewer.model.materials[1];
+                        material1.pbrMetallicRoughness.setBaseColorFactor(colorString);
+                      });
+document.querySelector('#mySidepanelPillow').addEventListener('click', (event) => {
+                            const colorString = event.target.dataset.color;
+                            const material0 = modelviewer.model.materials[0];
+                            material0.pbrMetallicRoughness.setBaseColorFactor(colorString);
+                          });
+        const modelViewerTexture = document.querySelector('model-viewer-id');
+  
+  /*document.querySelector('#pillowTextureControls').addEventListener('click', (event) => {
+  const texture = modelViewerTexture.createTexture("Diamond.jpg");
+  const material0 = modelViewerColor1.model.materials[0];
+  material0.setTexture(texture);
+  let color = ["1", "1", "1", "1"];
+    //const material0 = modelviewer.model.materials[0];
+    material0.pbrMetallicRoughness.setBaseColorFactor(color);
+    //const texture = modelViewerTexture.createTexture(event.target.value);
+    //material0.setTexture(texture);
+  }); */
+  
+            document.querySelector('#mySidepanelPillow').addEventListener('click', (event) => {
+  
+              const material0 = modelviewer.model.materials[0];
+  
+            const createAndApplyTexture = async (channel, event) => {
+              if (event.target.value == "None") {
+                // Clears the texture.
+                material[channel].setTexture(null);
+                
+              } else if (event.target.value) {
+                // Creates a new texture.
+                const texture = await modelviewer.createTexture(event.target.value);
+              
+                // Applies the new texture to the specified channel.
+                material0[channel].setTexture(texture);
+              
+              }
+            }
+  
+            document.querySelector('#mySidepanelPillow').addEventListener('click', (event) => {
+              createAndApplyTexture('normalTexture', event);
+            });
+            });
+  
+  
+  
+            function resetView() {
+
+        modelviewer.cameraOrbit = '0 75deg 10m';
+      }
+      function reload(){
+          let color = ["1", "1", "1", "1"];
+          const material1 = modelviewer.model.materials[1];
+          const material0 = modelviewer.model.materials[0];
+          material1.pbrMetallicRoughness.setBaseColorFactor(color);
+          material0.pbrMetallicRoughness.setBaseColorFactor(color);
+          //material0.pbrMetallicRoughness.baseColorTexture.texture.source.setTexture("white.jpg");
+          //const texture = modelViewer1.createTexture("white.jpg");
+         // material0.SetTexture(texture);
+          //createAndApplyTexture('normalTexture', event);
+  
+          location.reload();
+      };
+  
+      function InsceneLoad(){
+        var window3d = window.open("Inscene1.html", '_blank', 'location=no,status=no,scrollbars=yes,resizable=yes,width=screen.width * 0.8,height=screen.height * 0.8');
+        //var window3d = window.open("./Simple_Chair_Inscene.php", 'location=no,status=no,scrollbars=yes,resizable=yes,width=screen.width * 0.8,height=screen.height * 0.8');
+        window3d.resizeTo(screen.width* 0.8, screen.height * 0.8);
+        window3d.moveTo(screen.width* 0.1 * Math.random(), screen.height * 0.1 * Math.random());
+        window3d.focus()
+      };
+          
+  
+  </script>
+
+    
+</body>
+</html>

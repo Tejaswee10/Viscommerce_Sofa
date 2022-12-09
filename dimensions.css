@@ -1,0 +1,144 @@
+/* Model Viewer CSS Test*/
+
+
+#show-dimensions {
+	height: 22px;
+	width: 35px;
+	margin-left: 20px;
+	margin-top: 0px;
+}
+
+.form-check-input:checked {
+    background-color: rgba(0, 150, 136, 0.8);
+    border-color: rgba(200, 253, 247, 0.8);
+}
+
+.form-switch .form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba(0, 150, 136, 0.8)'/%3e%3c/svg%3e");
+}
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='white'/%3e%3c/svg%3e");
+}
+
+.content-label{
+
+	font-family: Abhaya Libre ExtraBold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+  color: #2c3e50;
+
+}
+
+.content-text{
+  font-family: Abhaya Libre ExtraBold;
+
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+  color: #2c3e50;
+
+}
+
+.dot{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    --min-hotspot-opacity: 0;
+  }
+
+  .dim{
+    background: rgba(255, 255, 255, 0.829);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+    display: block;
+    font-family: Futura, Helvetica Neue, sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    max-width: 128px;
+    overflow-wrap: break-word;
+    padding: 0.5em 1em;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: translate3d(-50%, -50%, 0);background-color: #a7a7a700;
+    --min-hotspot-opacity: 0;
+  }
+
+  .show{
+    --min-hotspot-opacity: 1;
+  }
+
+  .hide{
+    display: none;
+  }
+  /* This keeps child nodes hidden while the element loads */
+	:not(:defined) > :not(.poster) {
+      display: none;
+    }
+
+
+  .Dimensions{
+    grid-area: dimensions;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 17px;
+    font-weight: bold;
+	overflow: hidden;
+  }
+
+
+  #Units{
+	  display: inline-block;
+      margin-left: 10px;
+  }
+
+  #Units input{
+	  vertical-align: text-top;
+      margin-left: 7px;
+	  border-radius: 5px;
+	  width: 18px;
+	  height: 18px;
+  }
+
+  #Units input:checked{
+	  background-image: none;
+  }
+
+
+  @media screen and (max-width: 1024px) {
+	 #Units{
+      margin-left: 0px;
+	}
+
+  }
+
+
+
+  @media screen and (max-width: 768px) {
+		#show-dimensions {
+			height: 20px;
+			width: 30px;
+			margin-left: 15px;
+			margin-top: 1px;
+		}
+
+    .Dimensions{
+      grid-area: dimensions;
+      padding-top: 5px;
+      padding-bottom: 5px;
+    }
+
+    .Units{
+      grid-area: units;
+      padding-top: 0px;
+      padding-bottom: 0px;
+	  margin-top: 10px;
+    }
+  }

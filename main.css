@@ -1,0 +1,508 @@
+#main{
+	max-height: 100vh;
+}
+
+
+body {
+	background: url('https://tse2.mm.bing.net/th?id=OIP.U1e6ZC4nfHlsZGfnQFfoawHaD4&pid=Api&P=0 ') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+	font-family: Arial, Helvetica, sans-serif;
+
+	margin-top: 20px;
+	margin-left: 50px;
+	
+	
+  }
+  body h1{
+	
+	
+	font-family:Arial, Helvetica, sans-serif;
+	color: #900000;
+	font-weight: 800;
+	margin-left: 28px;
+	font-family: Abhaya Libre ExtraBold;
+	font-size: 60px;
+	
+	text-shadow: 0.5px 0.5px #f1f4d8, 1px 1px #f1f4d8, 2px 2px #f1f4d8, 2.5px 2.5px #2e6364, 3px 3px #2e6364, 3.5px 3.5px #2e6364, 4px 4px #2e6364, 4.5px 4.5px #2e6364, 5px 5px #2e6364, 5.5px 5.5px #2e6364, 6px 6px #2e6364, 6.5px 6.5px #2e6364, 7px 7px #2e6364, 7.5px 7.5px #2e6364; 
+	
+  }
+#heading{
+	margin-top: 25px;
+}
+#heading h2{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	color: #900000;
+}
+.model{
+	position: relative;
+	height: 70;
+
+}
+
+model-viewer{
+	display: block;
+	height: 78vh;
+  width: 100%;
+	padding: 25px 0 25px 25px;
+	
+}
+
+
+.poster {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#title{
+	border-bottom: 2px solid #BABABA;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+#title h1{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 26px;
+	line-height: 32px;
+	color: #000000;
+	
+}
+
+
+#title span{
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 20px;
+
+	color: #4F4F4F;
+}
+
+.playground{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: calc(100% - 120px);
+}
+
+.content-label{
+
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 21px;
+	color: #454545;
+
+}
+
+.content-text{
+
+	font-family: Red Hat Display;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 26px;
+	color: #000000;
+
+}
+
+
+.EnvironmentImage{
+	margin-top: 10px;
+	padding: 1em ;
+	
+}
+
+.EnvironmentImage label{
+	display: block;
+	font-size:24px;
+	padding-left:150px; 
+	font-size:medium; 
+	font-family: Abhaya Libre ExtraBold;
+	
+}
+
+.EnvironmentImage select{
+	width: 100%;
+	height: 50px;
+	padding: 5px 20px;
+	border-radius: 40px;
+	border: 5px solid #900000;
+	background-color: #ffffff;
+	box-shadow: 0px 4px 5px #5a5a5a;
+	font-family: Abhaya Libre ExtraBold;
+	float: right;
+	width: 250px;
+	cursor: pointer;
+}
+
+
+
+
+.appearance-btn{
+	height: 45px;
+	width: 45px;
+	background: #FC3424;
+	box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
+	border: none;
+	margin-top: 10px;
+	
+}
+
+.reset-view-btn{
+	border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #EBEBEB;
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	line-height: 0;
+	margin-bottom: 15px;
+}
+
+.reset-model-btn{
+	border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: #EBEBEB;
+  border: none;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+	line-height: 0;
+}
+
+.reset-view-btn img{
+	width: auto;
+	height: 26px;
+}
+
+.reset-model-btn img{
+	width: auto;
+	height: 24px;
+}
+
+
+
+#auto-rotate-id {
+	height: 22px;
+	width: 35px;
+  margin-left: 20px;
+	margin-top: 0px;
+}
+
+  /* Box colors */
+ 
+  
+  /* Common button styles */
+  .button {
+	float: right;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 1em;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	font-family: Abhaya Libre ExtraBold;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.button {
+	color: #ffffff;
+	border-color: #ffffff;
+	background-color: #900000;
+	border-radius: 40px;
+	
+}
+
+
+/* Sizes */
+.button--size-s {
+	font-size: 17px;
+}
+
+
+/* Typography and Roundedness */
+.button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+  font-weight: 600;
+}
+
+
+/* Borders */
+
+.button--border-thick {
+	border: 5px solid;
+}
+
+.button--wayra {
+	overflow: hidden;
+	width: 245px;
+	-webkit-transition: border-color 0.3s, color 0.3s;
+	transition: border-color 0.3s, color 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	box-shadow: 0px 6px 8px #000000;
+}
+.button--wayra::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 150%;
+	height: 100%;
+	background: #ffffff;
+	z-index: -1;
+	-webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+	-webkit-transform-origin: 0% 100%;
+	transform-origin: 0% 100%;
+	-webkit-transition: -webkit-transform 0.3s, opacity 0.3s, background-color 0.3s;
+	transition: transform 0.7s, opacity 0.3s, background-color 0.3s;
+	
+}
+.button--wayra:hover {
+	color: #900000;
+	border-color: #900000;
+	transform: translateY(-7px);
+	box-shadow: 0px 6px 8px #666666;
+	
+}
+
+.button--wayra:hover::before {
+	opacity: 1;
+	background-color: #ffffff;
+	-webkit-transform: rotate3d(0, 0, 1, 0deg);
+	transform: rotate3d(0, 0, 1, 0deg);
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.container .btn{
+margin-left: 200px; border-color:white; border-radius:25px ;font-family: Abhaya Libre ExtraBold; border-width: 4px; margin-top: 15px;
+}
+
+.SofaColorButtons{
+	margin-top: 50px;
+}
+
+.SofaColorButtons #mySidepanelSofa {
+	float:right;
+	width: 0;
+	position: static;
+	z-index: 1;
+	height: 75px;
+	top: 199;
+	right:0;
+	font-family: Abhaya Libre ExtraBold;
+	background-color: #900000;
+	overflow-x: hidden;
+	transition: 0.4s;
+	box-shadow: 0px 6px 8px #000000;
+	padding-top: 8px;
+	border-radius: 10px;
+
+	
+  }
+
+  .PillowColorButtons .sidepanel {
+	float:right;
+	width: 0;
+	position: static;
+	z-index: 1;
+	height: 75px;
+	top: 0;
+	right: 0;
+	left: 100px;
+	background-color: #900000;
+	overflow-x: hidden;
+	transition: 0.4s;
+	font-family: Abhaya Libre ExtraBold;
+	box-shadow: 0px 6px 8px #000000;
+	padding-top: 10px;
+	border-radius: 10px;
+	
+  }
+  
+#mySidepanelUnits {
+	float:right;
+	width: 0;
+	position: static;
+	z-index: 1;
+	height: 90px;
+	top: 0;
+	box-shadow: 0px 6px 8px #000000;
+	background-color: #900000;
+	overflow-x: hidden;
+	transition: 0.4s;
+    
+	padding-top: 10px;
+	border-radius: 10px;
+	
+  }
+
+  
+  
+  
+  .sidepanel button:hover {
+	border-radius: 20;
+	border-color: aliceblue;
+	border-width: 4px;
+	border-style: solid;
+	
+  }
+
+
+  
+  
+
+
+
+.form-check-input:checked {
+    background-color: #ff1500c6;
+    border-color: rgb(255, 194, 204);
+	
+}
+
+.form-switch .form-check-input {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgb(254, 81, 67)'/%3e%3c/svg%3e");
+}
+.form-switch .form-check-input:focus {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='pink'/%3e%3c/svg%3e");
+}
+
+.form-switch {
+	padding-top: 200px;
+	left: 300px;
+
+}
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.EnvironmentImage{
+		margin-top: 25px;
+	}
+
+
+
+	.content-text{
+		font-size: 17px !important;
+	}
+
+	.content-label{
+		font-size: 15px !important;
+	}
+
+	#model-controls{
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		margin-top: 20px;
+	}
+
+	.reset-view-btn{
+		width: 35px;
+		height: 35px;
+		margin-bottom: 0px;
+	}
+	
+
+	.reset-model-btn{
+		width: 35px;
+		height: 35px;
+	}
+
+	.reset-view-btn img{
+		width: auto;
+		height: 22px;
+	}
+
+	.reset-model-btn img{
+		width: auto;
+		height: 20px;
+	}
+
+
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	model-viewer{
+		padding: 25px 25px 0 25px;
+	}
+
+	#title h1{
+		text-align: center;
+	}
+
+	#title span{
+		display: block;
+		text-align: center;
+	}
+
+	model-viewer{
+		height: 50vh;
+		width: 100%;
+	}
+
+	.playground{
+		height: calc(100% - 50px);
+		padding-bottom: 20px;
+		max-width: 300px;
+		margin: auto;
+	}
+
+	.AutoRotate{
+		margin-top: 10px;
+	}
+
+	#auto-rotate-id {
+		height: 20px;
+		width: 30px;
+		margin-left: 15px;
+		margin-top: 1px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+	.appearance-btn{
+		height: 40px;
+		width: 40px;
+	}
+
+}

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Light Brown Cloth Sofa</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="css/progress_bar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Red+Hat+Display&family=Ubuntu&display=swap" rel="stylesheet">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer@1.9.2/dist/model-viewer.min.js"></script>
+    <script src="js/auto_rotate.js"></script>
+
+
+  
+
+</head>
+
+<body>
+  <header>
+      <link rel="stylesheet" href="css/home_button.css">
+      <script src="js/home_button.js"></script>
+  </header>
+
+	<div id="main" class="row gx-0">
+		<section class="model col-12 col-md-7 col-lg-8">
+
+			<model-viewer
+				id="model-viewer-id"
+				src="Light_Brown_Cloth_InScene_1K.glb"
+				poster="images/Standalone_Poster.jpg"
+				alt="Light Brown Cloth Sofa"
+				interaction-prompt="auto"
+				exposure="1"
+				shadow-intensity="3"
+				shadow-softness="0.1"
+				camera-orbit="0 75deg 2m"
+				max-camera-orbit="0 0 2.3m"
+				interaction-prompt="none"
+				camera-controls>
+
+				<script src="js/progress_bar.js" ></script>
+			</model-viewer>
+
+		</section>
+		<section class="col-12 col-md-5 col-lg-4 px-4 px-lg-5">
+			<div id="title">
+				<h1>Light Brown Cloth Sofa</h1>
+				<span>$299.99</span>
+			</div>
+
+			<div class="playground">
+				<div class="EnvironmentImage">
+					<label for="hdris" class="hdris-label content-label mb-2">Environment:</label>
+					<select id="hdris" class="content-text">
+						<option value=";">
+						   White
+						</option>
+						<option selected="selected" value="hdri/wooden_lounge_0.5k.hdr;hdri/wooden_lounge_1k.jpg">
+							Wooden lounge
+						</option>
+						<option value="hdri/ballroom_0.5k.hdr;hdri/ballroom_1k.jpg">
+							Ballroom
+						</option>
+						<option value="hdri/anniversary_lounge_0.5k.hdr;hdri/anniversary_lounge_1k.jpg">
+							Anniversary lounge
+						</option>
+						<option value="hdri/autoshop_01_0.5k.hdr;hdri/autoshop_01_1k.jpg">
+							Autoshop
+						</option>
+						<option value="hdri/studio003small.hdr;hdri/studio003small.jpg">
+							Studio small
+						</option>
+						<option value="hdri/kiara_interior_0.5k.hdr;hdri/kiara_interior_1k.jpg">
+							Kiara interior
+						</option>
+						<option value="hdri/lebombo_0.5k.hdr;hdri/lebombo_1k.jpg">
+							Lebombo
+						</option>
+
+					</select>
+				</div>
+
+				<div>
+					<div class="SofaColourButtons">
+						<div class="SofaColor content-label">Sofa Fabric</div>
+						<div id="sofaColorControls" class="d-flex flex-row flex-wrap justify-content-between">
+							<button class="appearance-btn" style="background-color:rgb(221, 194, 154)" data-color="1,1,1,1"></button>
+							<button class="appearance-btn" style="background-color:rgb(237, 219, 23)" data-color="0.84,0.74,0.0,1"></button>
+							<button class="appearance-btn" style="background-color:rgb(152, 183, 94)" data-color="0.4,0.8,0,2"></button>
+							<button class="appearance-btn" style="background-color:rgb(224, 122, 46)" data-color="0.89,0.27,0,15"></button>
+							<button class="appearance-btn" style="background-color:rgb(17, 119, 116)" data-color="0.0,0.3,0.7,1"></button>
+							<button class="appearance-btn" style="background-color:rgb(50, 50, 50)" data-color="0.03,0.03,0.03,1"></button>
+						</div>
+					</div>
+
+
+
+					<div class="PillowColorButtons">
+						<div class="PillowColor content-label">Pillow Fabric</div>
+						<div class="d-flex flex-row flex-wrap justify-content-between">
+							<button class="appearance-btn pillowColorControls" style="background-color:rgb(216, 99, 22) " data-color="1,1,1,1" data-name="Red"></button>
+							<button class="appearance-btn pillowColorControls" style="background-color:rgb(26, 77, 13)" data-color="0,1,0,1" data-name="Green"></button>
+							<button class="appearance-btn pillowColorControls" style="background-color:rgb(41, 41, 41) " data-color="0,0,0,1" data-name="Black"></button>
+							<button class="appearance-btn pillowTextureControls" style="background-image: url('./images/textures/Texture_Thumbnails/Checker.jpg') " value="./images/textures/Checker.jpg"
+								data-name="CheckerPattern"></button>
+							<button class="appearance-btn pillowTextureControls" style="background-image: url('./images/textures/Texture_Thumbnails/Diamond.jpg')" value="./images/textures/Diamond.jpg"
+								data-name="DiamondPattern"></button>
+							<button class="appearance-btn pillowTextureControls" style="background-image: url('./images/textures/Texture_Thumbnails/Leaf.jpg')" value="./images/textures/Leaf.jpg"
+								data-name="LeafPattern"></button>
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex flex-wrap justify-content-between align-items-end">
+					<div>
+
+            <div class="AutoRotate form-check form-switch ps-0">
+      			  <label class="form-check-label float-start content-label" for="auto-rotate-id">AutoRotate</label>
+      			  <input class="form-check-input" type="checkbox" id="auto-rotate-id" onclick="auto_rotate()">
+      			</div>
+
+					</div>
+					<div id="model-controls">
+
+						<div class="ResetView">
+							<button onclick="resetView()" class="reset-view-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Reset View">
+								<img src="images/reset-view-icon.png" />
+							</button>
+						</div>
+
+						<div class="Reload">
+							<button onclick="reload()" class="reset-model-btn" type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="Reset Model">
+								<img src="images/reset-model-icon.png"/>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section>
+	</div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+  <script>
+      var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+      var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+       return new bootstrap.Tooltip(tooltipTriggerEl)
+      });
+
+        var modelviewer = document.getElementById("model-viewer-id");
+
+        document.querySelector("#hdris").addEventListener("input", (event) => {
+            x = event.target.value;
+            temp = new Array();
+            temp = x.split(";");
+            y = temp[0];
+            z = temp[1];
+            modelviewer.setAttribute("environment-image", y);
+            modelviewer.setAttribute("skybox-image", z);
+        });
+
+		   document.querySelectorAll(".pillowColorControls").forEach(div =>
+				div.onclick = function() {
+					const colorString = event.target.dataset.color;
+					const color = colorString.split(",");
+					const material0 = modelviewer.model.materials[0];
+					material0.pbrMetallicRoughness.baseColorTexture.texture.source.setURI("./images/textures/white.jpg");
+					material0.pbrMetallicRoughness.setBaseColorFactor(color);
+			});
+
+			document.querySelectorAll(".pillowTextureControls").forEach(div =>
+				div.onclick = function() {
+					 let color = ["1", "1", "1", "1"];
+					const material0 = modelviewer.model.materials[0];
+					material0.pbrMetallicRoughness.setBaseColorFactor(color);
+					let xyz = event.target.value;
+					material0.pbrMetallicRoughness.baseColorTexture.texture.source.setURI(event.target.value);
+			});
+
+
+        document.querySelector("#sofaColorControls").addEventListener("click", (event) => {
+            const colorString = event.target.dataset.color;
+            const color = colorString.split(",");
+            const material1 = modelviewer.model.materials[1];
+            material1.pbrMetallicRoughness.setBaseColorFactor(color);
+
+
+        });
+
+		function resetView() {
+			modelviewer.cameraOrbit = '0 75deg 10m';
+        }
+
+		modelviewer.addEventListener('progress', onProgress);
+
+        document.getElementById("model-viewer-id").addEventListener("load",  function postload(){
+
+			console.log("In postload() ... ");
+			var xmlhttp = new XMLHttpRequest();
+			xmlhttp.open("GET","deleter.php?glFile=<?php echo $glFile;?>");
+			xmlhttp.send();
+			console.log("Deletion done");
+			modelviewer.setAttribute("environment-image", "hdri/wooden_lounge_0.5k.hdr");
+			modelviewer.setAttribute("skybox-image", "hdri/wooden_lounge_1k.jpg");
+
+            const material0 = modelviewer.model.materials[0];
+            material0.pbrMetallicRoughness.baseColorTexture.texture.source.setURI("./images/textures/white.jpg");
+
+
+
+			console.log("Attributes set");
+
+        });
+
+
+     function reload(){
+        let color = ["1", "1", "1", "1"];
+        const material1 = modelviewer.model.materials[1];
+        const material0 = modelviewer.model.materials[0];
+        material1.pbrMetallicRoughness.setBaseColorFactor(color);
+        material0.pbrMetallicRoughness.setBaseColorFactor(color);
+        material0.pbrMetallicRoughness.baseColorTexture.texture.source.setURI("./images/textures/white.jpg");
+
+        //location.reload();
+
+     };
+    </script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+
+</html>

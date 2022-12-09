@@ -1,0 +1,26 @@
+.AutoRotate{
+  display: none;
+}
+
+.AutoRotate button{
+  display: none;
+}
+
+.Standalone button{
+  
+  background-color: #ffffff;
+  border-radius: 5px;
+  border: 1px solid #7d7d7d;
+  display: inline-block;
+  cursor: pointer;
+  color: #000000;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 4px 12px;
+  text-decoration: none;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  margin-top: 2px;
+    
+  }
+  

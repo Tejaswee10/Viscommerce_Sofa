@@ -1,0 +1,388 @@
+#main {
+	max-height: 100vh;
+    font-family: Abhaya Libre ExtraBold;
+   
+    
+}
+.model{
+position: relative;
+height: 70;
+
+}
+
+model-viewer{
+    
+display: block;
+height: 85vh;
+width: 100%;
+padding: 100px 0 25px 25px;
+
+
+}
+
+
+
+.poster {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+top: 0;
+left: 0;
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+}
+body {
+    background: url('https://tse2.mm.bing.net/th?id=OIP.U1e6ZC4nfHlsZGfnQFfoawHaD4&pid=Api&P=0 ') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+overflow: hidden;
+    line-height: 1.5;
+    font-size: 13px;
+    font-family:Abhaya Libre ExtraBold;
+  
+    
+	
+}
+
+
+section h2{
+  padding-top: 70px;
+}
+ 
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.nav{
+
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+
+  width: 100%;
+
+  overflow: hidden;
+  font-family: Abhaya Libre ExtraBold;
+  background: linear-gradient(-45deg, #ffc0ad, #e73c7e, #71bfdc, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
+}
+.nav a{
+    padding: 14px 16px;
+    float: left;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500px;
+
+}
+.nav a img{
+    height: auto;
+    width: 40px;
+    
+}
+.nav a:hover{
+  background-color:#008888;
+  color: white;
+}
+.nav a.active{
+    background-color:#008888;
+    color: white;
+}
+.nav form{
+  float: right;
+  margin-left: 470px;
+}
+.nav .icon  svg{
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+	model-viewer{
+		padding: 25px 25px 0 25px;
+	}
+	section h2{
+    padding-top: 0px;
+      }
+   
+    
+	
+
+	model-viewer{
+		height: 50vh;
+		width: 100%;
+	}
+
+	.playground{
+		height: calc(100% - 50px);
+		padding-bottom: 20px;
+		max-width: 300px;
+		margin: auto;
+	}
+
+	.AutoRotate{
+		margin-top: 10px;
+	}
+
+  .content-text{
+		font-size: 17px !important;
+	}
+
+	.content-label{
+		font-size: 15px !important;
+	}
+
+
+	#auto-rotate-id {
+		height: 20px;
+		width: 30px;
+		margin-left: 15px;
+		margin-top: 1px;
+	}
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon svg {
+    float: right;
+    display: block;
+
+}
+}
+
+@media screen and (max-width: 767px) {
+
+
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon  svg{
+    float: right;
+    display: block;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  
+  }
+}
+
+
+
+
+
+
+
+.EnvironmentImage{
+	margin-top: 10px;
+	padding: 1em ;
+	
+}
+
+.EnvironmentImage label{
+	display: block;
+	font-size:24px;
+
+	font-size:medium; 
+	font-family: Abhaya Libre ExtraBold;
+	
+}
+
+.EnvironmentImage select{
+	width: 80%;
+	height: 40px;
+	padding: 5px 20px;
+	border-radius: 40px;
+	
+	background-color: #ffffff;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+	font-family: Abhaya Libre ExtraBold;
+	
+	cursor: pointer;
+}
+.EnvironmentImage option{
+padding: 8px;
+
+}
+
+
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    
+  }
+  
+  .row {
+    display: flex;
+  }
+  .row .col {
+    flex: 1;
+  }
+  .row .col:last-child {
+    margin-left: 1em;
+  }
+  
+
+/*environment buttons styles*/
+#section3 button{
+  width: 80%;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: rgba(0, 150, 136, 0.8);
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+align-items: center;
+}
+
+#section3 button:hover{
+  background: linear-gradient(-45deg, #ffc0ad, #e73c7e, #71bfdc, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+  /* Accordion styles */
+  .tabs {
+    width: 80%;
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .tab {
+    color: white;
+    overflow: hidden;
+    
+  }
+  .tab-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background: rgba(0, 150, 136, 0.8);
+    font-weight: bold;
+    cursor: pointer;
+    /* Icon */
+  }
+  .tab-label:hover {
+    background: linear-gradient(-45deg, #ffc0ad, #e73c7e, #71bfdc, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 6s ease infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+  .tab-label::after {
+   
+    width: 1em;
+    height: 1em;
+    text-align: center;
+    transition: all 0.25s;
+  }
+  .tab-content {
+    max-height: 0;
+    padding: 0 1em;
+    color: #2c3e50;
+    backdrop-filter: blur(14px);
+    transition: all 0.25s;
+  }
+  .tab-close {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1em;
+    font-size: 0.75em;
+    background: rgba(0, 150, 136, 0.8);
+    cursor: pointer;
+  }
+  .tab-close:hover {
+    background: #1a252f;
+  }
+  
+  .tab input:checked + .tab-label {
+    background: rgba(0, 150, 136, 0.8);
+  }
+  .tab input:checked + .tab-label::after {
+    transform: rotate(90deg);
+  }
+  .tab input:checked ~ .tab-content {
+    max-height: 100vh;
+    padding: 1em;
+  }
+
+  .appearance-btn{
+	height: 45px;
+	width: 45px;
+	background: #FC3424;
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	border: none;
+	margin-top: 10px;
+	
+}
+
+.appearance1-btn{
+	height: 45px;
+	width: 45px;
+	
+	box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	border: none;
+	margin-top: 10px;
+	
+}
+
+#hdris2{
+align-items: center;
+text-align: center;
+}
+
+
+.tab button:hover {
+	border-radius: 10;
+	border-color: rgb(208, 233, 255);
+	border-width: 3px;
+	border-style: solid;
+	
+  }
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+
+	.EnvironmentImage{
+		margin-top: 25px;
+	}
+
+
+
+
+
+
+}
+
+
+
+
+
