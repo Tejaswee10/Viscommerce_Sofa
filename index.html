@@ -131,9 +131,9 @@ function sec1(){
                     camera-controls>
                     
                     
-                      <script src="js/dimensions/dimensions_add.js" ></script>
+                      <script src="dimensions_add.js" ></script>
       
-                    <div class="poster" slot="poster" style="background-image: url('images/Standalone_Poster.jpg');"></div>
+                    <div class="poster" slot="poster" style="background-image: url('Standalone_Poster.jpg');"></div>
 
                     <script src="js/progress_bar.js" ></script>
                   </model-viewer>
@@ -200,11 +200,11 @@ function sec1(){
                                                             <br>
                                                             Customize your pillow texture/fabric colour
                                                             <br>
-                                                            <button class="appearance-btn pillowTextureControls" id="pillowTextureControls" style="background-image: url('Checker.jpg') " value="images/textures/Checker.jpg"
+                                                            <button class="appearance-btn pillowTextureControls" id="pillowTextureControls" style="background-image: url('Checker.jpg') " value="Checker.jpg"
                                                                                             data-name="CheckerPattern"></button>
-                                                                          <button class="appearance-btn pillowTextureControls" id="pillowColorControls" style="background-image: url('Diamond.jpg')" value="images/textures/Diamond.jpg"
+                                                                          <button class="appearance-btn pillowTextureControls" id="pillowColorControls" style="background-image: url('Diamond.jpg')" value="Diamond.jpg"
                                                                                             data-name="DiamondPattern"></button>
-                                                                          <button class="appearance-btn pillowTextureControls" id="pillowColorControls" style="background-image: url('Leaf.jpg')" value="images/textures/Leaf.jpg"
+                                                                          <button class="appearance-btn pillowTextureControls" id="pillowColorControls" style="background-image: url('Leaf.jpg')" value="Leaf.jpg"
                                                                                             data-name="LeafPattern"></button>
                                                     </div>
                                         </div>
@@ -248,8 +248,8 @@ function sec1(){
                             </div>
                       </div>
     
-    <br> <script src="js/dimensions/dimensions_Change.js"></script>
-    <link rel="stylesheet" href="css/dimensions/dimensions.css">
+    <br> <script src="dimensions_Change.js"></script>
+    <link rel="stylesheet" href="dimensions.css">
 
       <!-- sec2-->
   </section> 
@@ -263,50 +263,50 @@ function sec1(){
 <div id="hd" >
       <button
       id="imageSmall" type="button"
-      onmouseover="showImage1('imageSmall','christmas_photo_studio_03_4k.jpg')"
+      onmouseover="showImage1('imageSmall','reading_room_4k.jpg')"
       onmouseout="hideImage1('imageSmall')"
 
-      value="christmas_photo_studio_03_4k.hdr;christmas_photo_studio_03_4k.jpg">Christmas Room</button>
+      value="reading_room_4k.hdr;reading_room_4k.jpg"> Reading Room</button>
 
       <br>
       <button
       id="imageSmall" type="button"
-      onmouseover="showImage1('imageSmall','childrens_hospital_4k_1.jpg')"
+      onmouseover="showImage1('imageSmall','residential_garden_4k.jpg')"
       onmouseout="hideImage1('imageSmall')"
 
-      value="childrens_hospital_4k.hdr;childrens_hospital_4k_1.jpg" >Childrens_hospital</button>
+      value="residential_garden_4k.hdr;residential_garden_4k.jpg" >Residential garden</button>
             
       <br>
       <button
       id="imageSmall" type="button"
-      onmouseover="showImage1('imageSmall','fireplace_4k_1.jpg')"
+      onmouseover="showImage1('imageSmall','kiara_interior_0.5k.jpg')"
       onmouseout="hideImage1('imageSmall')"
 
-      value="fireplace_4k.hdr;fireplace_4k_1.jpg"> Fire Place</button>
+      value="kiara_interior_0.5k.hdr;kiara_interior_0.5k.jpg"> kiara_interior</button>
       <br>
       <button
       id="imageSmall" type="button"
-      onmouseover="showImage1('imageSmall','music_hall_02_4k.jpg')"
+      onmouseover="showImage1('imageSmall','Building.jpg')"
       onmouseout="hideImage1('imageSmall')"
 
-      value="music_hall_02_4k.hdr;music_hall_02_4k.jpg"> Music Hall</button>
+      value="Building.hdr;Building.jpg"> Building</button>
 
       <br>
       <button
       id="imageSmall" type="button"
-      onmouseover="showImage1('imageSmall','marry_hall_4k.jpg')"
+      onmouseover="showImage1('imageSmall','Indoor.jpg')"
       onmouseout="hideImage1('imageSmall')"
   
-      value="marry_hall_4k.hdr;marry_hall_4k.jpg">Marry Hall Studio</button>
+      value="Indoor.hdr;Indoor.jpg">Indoor</button>
 
       <br>
 
       <button
       id="imageSmall" type="button"
-      onmouseover="showImage1('imageSmall','brown_photostudio_07_4k_1.jpg')"
+      onmouseover="showImage1('imageSmall','Residential.jpg')"
       onmouseout="hideImage1('imageSmall')"
 
-      value="brown_photostudio_07_4k.hdr;brown_photostudio_07_4k_1.jpg" >Photo Studio</button>
+      value="Residential.hdr;Residential.jpg" >Residential</button>
 
 </div>
  <!-- sec3--> 
@@ -456,6 +456,7 @@ document.querySelector('#mySidepanelPillow').addEventListener('click', (event) =
   
   
             function resetView() {
+
         modelviewer.cameraOrbit = '0 75deg 10m';
       }
       function reload(){
@@ -464,8 +465,8 @@ document.querySelector('#mySidepanelPillow').addEventListener('click', (event) =
           const material0 = modelviewer.model.materials[0];
           material1.pbrMetallicRoughness.setBaseColorFactor(color);
           material0.pbrMetallicRoughness.setBaseColorFactor(color);
-          //material0.pbrMetallicRoughness.baseColorTexture.texture.source.setTexture("images/textures/white.jpg");
-          //const texture = modelViewer1.createTexture("images/textures/white.jpg");
+          //material0.pbrMetallicRoughness.baseColorTexture.texture.source.setTexture("white.jpg");
+          //const texture = modelViewer1.createTexture("white.jpg");
          // material0.SetTexture(texture);
           //createAndApplyTexture('normalTexture', event);
   
